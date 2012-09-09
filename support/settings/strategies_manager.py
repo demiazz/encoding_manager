@@ -16,7 +16,7 @@ class StrategiesManager:
 
   def __init__(self):
     default = sublime.load_settings(DEFAULT_STRATEGIES_FILE)
-    user    = sublime.load_settings(USER_STRATEFIES_FILE)
+    user    = sublime.load_settings(USER_STRATEGIES_FILE)
 
     self.formats = self.__extract_formats(default, user)
     return
