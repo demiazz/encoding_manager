@@ -3,7 +3,7 @@
 import re
 
 
-SHEBANG_PATTERN   = re.compile(r'^#!.*$')
+SHEBANG_PATTERN = re.compile(r'^#!.*$')
 
 
 class DetectorMixin:
