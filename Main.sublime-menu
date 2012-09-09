@@ -1,0 +1,53 @@
+[
+  {
+    "caption": "Preferences",
+    "mnemonic": "n",
+    "id": "preferences",
+    "children":
+    [
+      {
+        "caption": "Package Settings",
+        "mnemonic": "P",
+        "id": "package-settings",
+        "children":
+        [
+          {
+            "caption": "Encoding Manager",
+            "children":
+            [
+              {
+                "command": "open_file", "args":
+                {
+                  "file": "${packages}/Encoding Manager/Encoding Manager.sublime-settings"
+                },
+                "caption": "Settings - Default"
+              },
+              {
+                "command": "open_file", "args":
+                {
+                  "file": "${packages}/User/Encoding Manager.sublime-settings"
+                },
+                "caption": "Settings - User"
+              },
+              {
+                "command": "open_file", "args":
+                {
+                  "file": "${packages}/Encoding Manager/Encoding Manager Strategies - Default.sublime-settings"
+                },
+                "caption": "Strategies - Default"
+              },
+              {
+                "command": "open_file", "args":
+                {
+                  "file": "${packages}/User/Encoding Manager Strategies - User.sublime-settings"
+                },
+                "caption": "Strategies - User"
+              },
+              { "caption": "-" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

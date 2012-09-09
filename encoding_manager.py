@@ -10,7 +10,7 @@ class EncodingManagerCommand(sublime_plugin.TextCommand):
   """
 
   def __init__(self, *args, **kwargs):
-    sublime_plugin.TextCommand(self, *args, **kwargs)
+    sublime_plugin.TextCommand.__init__(self, *args, **kwargs)
 
 
 class EncodingManagerEventListener(sublime_plugin.EventListener):
