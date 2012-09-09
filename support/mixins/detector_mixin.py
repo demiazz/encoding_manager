@@ -3,8 +3,7 @@
 import re
 
 
-SHEBANG_PATTERN   = r'^#!.*$'
-ENCODING_PATTERNS = []
+SHEBANG_PATTERN   = re.compile(r'^#!.*$')
 
 
 class DetectorMixin:
@@ -12,10 +11,9 @@ class DetectorMixin:
   Bundle of useful methods for detecting headers of the file.
   """
 
-  def __init__(self, user_patterns = list()):
-    self.__shebang_pattern   = re.compile(SHEBANG_PATTERN)
-    self.__encoding_patterns = [re.compile(p)
-                                  for p in ENCODING_PATTERNS + user_patterns]
+  def __init__(self, patterns = list()):
+    self.__shebang_pattern   = SHEBANG_PATTERN
+    self.__encoding_patterns = patterns
     return
 
   def is_shebang_exists(self, view):
