@@ -1,3 +1,8 @@
 {
-
+  "formats": {
+    "short": "coding: $encoding$",
+    "long" : "encoding: $encoding$",
+    "vim"  : "vim:fileencoding=$encoding$",
+    "emacs": "-*- coding: $encoding$ -*-"
+  }
 }
