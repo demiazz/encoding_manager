@@ -9,11 +9,11 @@ ENCODING_PATTERNS = []
 
 class DetectorMixin:
   """
-  Bundle of usefull methods for detecting headers of the file.
+  Bundle of useful methods for detecting headers of the file.
   """
 
   def __init__(self, user_patterns = list()):
-    self.__shebang_pattern = re.compile(SHEBANG_PATTERN)
+    self.__shebang_pattern   = re.compile(SHEBANG_PATTERN)
     self.__encoding_patterns = [re.compile(p)
                                   for p in ENCODING_PATTERNS + user_patterns]
     return
