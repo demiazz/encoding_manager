@@ -4,5 +4,23 @@
     "long" : "encoding: $encoding$",
     "vim"  : "vim:fileencoding=$encoding$",
     "emacs": "-*- coding: $encoding$ -*-"
-  }
+  },
+  "strategies": [
+    {
+      "matching": {
+        "extensions": {
+          "include": [],
+          "exclude": []
+        },
+        "filenames": {
+          "include": [],
+          "exclude": []
+        },
+        "syntaxes": {
+          "include": [],
+          "exclude": []
+        }
+      }
+    }
+  ]
 }
