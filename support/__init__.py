@@ -1,3 +1,3 @@
 # coding: utf-8
 
-from mixins import DetectorMixin
+from mixins import DetectorMixin, MatchMixin

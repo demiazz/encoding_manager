@@ -1,3 +1,3 @@
 # coding: utf-8
 
-from detector_mixin import DetectorMixin
+from detector_mixin import DetectorMixin, MatchMixin
